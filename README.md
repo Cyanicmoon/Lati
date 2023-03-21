@@ -1,2 +1,2 @@
 # Lati
-http://lati.kro.kr
+https://lati.kro.kr
