@@ -55,3 +55,6 @@ body{
     margin: 20px;
     cursor: pointer;
 }
+button:hover{
+    background-color: rgb(65, 65, 65);
+}
