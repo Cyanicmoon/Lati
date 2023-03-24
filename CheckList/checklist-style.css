@@ -67,3 +67,6 @@ header{
     bottom: 2%;
     cursor: pointer;
 }
+button:hover{
+    background-color: rgb(65, 65, 65);
+}
