@@ -71,7 +71,7 @@ header{
     min-height: 30px;
     border: none;
     border-radius: 10px;
-    background-color: rgb(0, 100, 35);
+    background-color: rgb(43, 43, 43);
     color: white;
     position: absolute;
     top: 0;
@@ -80,6 +80,9 @@ header{
     right: 0;
     margin: auto;
     cursor: pointer;
+}
+.add-btn:hover{
+    background-color: rgb(65, 65, 65);
 }
 .input-word{
     width: 90%;
@@ -99,7 +102,7 @@ header{
     min-height: 30px;
     border: none;
     border-radius: 10px;
-    background-color: rgb(0, 98, 100);
+    background-color: rgb(43, 43, 43);
     color: white;
     position: absolute;
     top: 0;
@@ -107,6 +110,9 @@ header{
     right: 0;
     margin: auto;
     cursor: pointer;
+}
+.start-btn:hover{
+    background-color: rgb(65, 65, 65);
 }
 .frame{
     width: 100%;
@@ -117,7 +123,7 @@ header{
     right: 0;
     left: 0;
     margin: auto;
-    background-color: rgb(200, 255, 237);
+    background-color: aliceblue;
 }
 .question{
     font-size: 50px;
@@ -163,6 +169,9 @@ header{
     font-size: 20px;
     cursor: pointer;
 }
+.submit_answer:hover{
+    background-color: rgb(201, 200, 200);
+}
 .restart-btn{
     width: 100px;
     height: 60px;
@@ -175,6 +184,9 @@ header{
     text-align: center;
     font-size: 20px;
     cursor: pointer;
+}
+.restart-btn:hover{
+    background-color: rgb(201, 200, 200);
 }
 .container{
     width: 100%;
