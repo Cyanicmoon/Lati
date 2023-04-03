@@ -16,6 +16,7 @@ body{
 .title{
     font-size: 50px;
     margin-left: 20px;
+    cursor: pointer;
 }
 .info{
     font-size: 20px;
@@ -33,28 +34,17 @@ body{
     color: black;
     margin-left: 20px;
 }
-.wordtest{
-    color: white;
-    border: 1px solid white;
-    border-radius: 7px;
-    background-color: rgb(43, 43, 43);
-    width: 150px;
-    height: 50px;
-    font-size: 20px;
-    margin: 20px;
-    cursor: pointer;
-}
-.checklist{
-    color: white;
-    border: 1px solid white;
-    border-radius: 7px;
-    background-color: rgb(43, 43, 43);
-    width: 150px;
-    height: 50px;
-    font-size: 20px;
-    margin: 20px;
-    cursor: pointer;
-}
 button:hover{
     background-color: rgb(65, 65, 65);
+}
+.button-methods{
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    background-color: rgb(43, 43, 43);
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
 }
