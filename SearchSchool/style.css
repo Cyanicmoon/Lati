@@ -1,0 +1,78 @@
+div, header{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: aliceblue;
+}
+
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.title{
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+.maker{
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    font-size: 16px;
+}
+.container{
+    width: 50%;
+    height: 35%;
+    max-width: 500px;
+    /* background-color: black; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    margin: auto;
+}
+.center{
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /* background-color: aqua; */
+}
+.input_search{
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 4%;
+    outline: none;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    border: 2px solid black
+}
+.list{
+    width: 90%;
+    height: 50%;
+    /* background-color: aquamarine; */
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+.item{
+    width: 100%;
+    max-width: 700px;
+    height: 50px;
+    color: rgb(101, 101, 101);
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+.info{
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
