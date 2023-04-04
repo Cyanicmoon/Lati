@@ -88,7 +88,7 @@ function create_meal(){
     meal = meal.replace(/[0-9."()]/g, "").replace(/[*]/g, " ").split("<br/>");
     for (let i=0; i<meal.length; i++){
         const p = document.createElement("p");
-        p.textContent = meal[i];
+        p.textContent = meal[i].replace(/[^ㄱ-ㅎ|가-힣]/g, "");
         p.classList.add("meal-item")
         container.appendChild(p);
     }
