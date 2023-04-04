@@ -1,0 +1,86 @@
+div, header{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: aliceblue;
+}
+
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.title{
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    color: white;
+}
+.maker{
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    font-size: 16px;
+}
+.container{
+    width: 100%;
+    height: 88%;
+    /* background-color: antiquewhite; */
+    position: absolute;
+}
+.meal{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: antiquewhite;
+}
+.meal_title{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(252, 246, 237);
+    margin-bottom: 50px;
+}
+.meal-item{
+    font-size: 22px;
+    text-align: center;
+}
+.school{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: aliceblue;
+}
+.school_title{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(221, 236, 252);
+    margin-bottom: 50px;
+}
+.school-item{
+    font-size: 22px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.btn{
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    background-color: rgb(43, 43, 43);
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 10%;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(65, 65, 65);
+}
