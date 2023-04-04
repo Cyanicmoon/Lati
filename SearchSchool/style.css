@@ -76,3 +76,6 @@ header{
     text-align: center;
     cursor: pointer;
 }
+.info:hover{
+    background-color: rgb(227, 242, 255);
+}
