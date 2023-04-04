@@ -1,2 +1,2 @@
-# Lati
-<h2>웹 페이지 : https://lati.kro.kr</h2>
+# <span style="background-color:black; color:white;">LATI</span>
+웹 페이지 : https://lati.kro.kr
