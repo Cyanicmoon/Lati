@@ -45,6 +45,8 @@ button:hover{
     width: 150px;
     height: 50px;
     font-size: 20px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
     cursor: pointer;
 }
