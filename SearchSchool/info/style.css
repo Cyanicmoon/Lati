@@ -78,7 +78,7 @@ header{
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 10%;
+    margin-top: 20px;
     cursor: pointer;
 }
 button:hover{
