@@ -1,5 +1,5 @@
 let list;
-const filePath = './학교기본정보.json';
+const filePath = '학교기본정보.json';
 
 // XMLHttpRequest 객체 생성
 const xhr = new XMLHttpRequest();
