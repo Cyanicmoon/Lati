@@ -67,7 +67,7 @@ header{
     margin-right: 10%;
 }
 .btn{
-    color: white;
+     color: white;
     border: 1px solid white;
     border-radius: 7px;
     background-color: rgb(43, 43, 43);
@@ -78,7 +78,6 @@ header{
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: 20px;
     cursor: pointer;
 }
 button:hover{
