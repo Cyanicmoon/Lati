@@ -59,7 +59,7 @@ header{
     height: 50%;
     /* background-color: aquamarine; */
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     left: 5%;
 }
 .item{
@@ -70,12 +70,12 @@ header{
     border-bottom: 1px solid black;
     margin: auto;
 }
+.info:hover{
+    background-color: rgb(227, 242, 255);
+}
 .info{
     font-size: 25px;
     color: black;
     text-align: center;
     cursor: pointer;
-}
-.info:hover{
-    background-color: rgb(227, 242, 255);
 }
