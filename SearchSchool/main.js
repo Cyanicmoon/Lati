@@ -43,6 +43,25 @@ function search_school(){
         container.appendChild(div);
     }
     body.appendChild(container);
+
+    const item = document.getElementsByClassName("info");
+    for (let i=0; i<temp.length; i++){
+        item[i].addEventListener("click", e => {
+            let name = e.target.textContent;
+            console.log(name);
+            move_page(name);
+        });
+    }
 }
 
-
+function move_page(name){
+    let code = "";
+    for (let i=0; i<list.length; i++){
+        // console.log(list[i].학교명);
+        if (list[i].학교명 == name){
+            code = list[i].표준학교코드;
+            break;
+        }
+    }
+    location.href = "info/index.html?code="+code;
+}
