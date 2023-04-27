@@ -63,5 +63,5 @@ function move_page(name){
             break;
         }
     }
-    location.href = "info/index.html?code="+code;
+    location.href = "info/?code="+code;
 }
