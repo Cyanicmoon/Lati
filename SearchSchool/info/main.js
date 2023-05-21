@@ -76,9 +76,15 @@ function get_meal(){
             return;
         },
         success: function(data) {
-            meal = JSON.stringify(JSON.parse(data).mealServiceDietInfo[1].row[0].DDISH_NM);
-            console.log(meal);
-            create_meal();
+            try {
+                meal = JSON.stringify(JSON.parse(data).mealServiceDietInfo[1].row[0].DDISH_NM);
+                console.log(meal);
+                create_meal();
+            }
+            catch(e){
+                const title = document.querySelector(".title");
+                title.textContent = "오류가 발생했어요";
+            }
         }
     });
 }
