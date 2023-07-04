@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자리 배치</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title" style="cursor: default;">1-4 자리 배치</h1>
+        <!-- <h2 class="maker">Made by Lati</h2> -->
+        <button class="mix" onclick="mixSeats();">배치</button>
+    </header>
+    <!-- <div class="nav-bar">
+
+    </div> -->
+    <div class="container">
+        <div class="line">
+            <div class="seat">
+                <input type="checkbox" class="seat-check" value="1">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat" style="justify-content: flex-start;">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="t"></div>
+        </div>
+        <div class="line">
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+        </div>
+        <div class="line">
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="seat">
+                <input type="checkbox" class="seat-check">
+                <input type="number" class="seat-number">
+            </div>
+            <div class="t"></div>
+            <div class="t"></div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px; margin-bottom: 50px; display: block;">
+        <h2 style="text-align: center;">제외할 번호</h2>
+        <div class="fixed-frame">
+
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
