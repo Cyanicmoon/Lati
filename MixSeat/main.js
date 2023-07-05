@@ -37,6 +37,26 @@ for (let i=1; i<=div_seat.length; i++){
     })
 }
 
+const check_blank = document.getElementsByClassName("mix-setting")[0];
+let check_setting_1 = true;
+check_blank.checked = true;
+check_blank.addEventListener("change", ()=>{
+    check_setting_1 = !check_setting_1;
+})
+
+const check_noPastSeat = document.getElementsByClassName("mix-setting")[1];
+let check_setting_2 = false;
+check_noPastSeat.addEventListener("change", ()=>{
+    check_setting_2 = !check_setting_2;
+})
+
+let seatHistory = -1;
+try {
+    seatHistory = JSON.parse(localStorage.getItem("seats"));
+}
+catch(e){}
+
+
 function mixSeats(){
     if (cnt_fixedNumber != cnt_fixedSeat){
         alert("제외한 자리와 번호의 개수가 맞지 않습니다");
@@ -49,22 +69,49 @@ function mixSeats(){
             seat.push(i+1);
         }
     }
+    while (true){
+        for (let i=0; i<1000; i++){
+            let r = Math.floor(Math.random()*(33-cnt_fixedNumber));
+            let temp = seat[0];
+            seat[0] = seat[r];
+            seat[r] = temp;
+        }
 
-    for (let i=0; i<1000; i++){
-        let r = Math.floor(Math.random()*(33-cnt_fixedNumber));
-        let temp = seat[0];
-        seat[0] = seat[r];
-        seat[r] = temp;
+        let j = 0;
+        for (let i=0; i<33; i++){
+            if (fixedSeat[i] == false){
+                div_seat[i].value = seat[j];
+                j += 1;
+            }else if (check_setting_1){
+                div_seat[i].value = "";
+            }
+        }
+
+        if (!check_setting_2 || seatHistory == -1){
+            break;
+        }
+
+        let c = true;
+        for (let i=0; i<33; i++){
+            if (div_seat[i].value == seatHistory[i] && fixedNumber[i] == false) {
+                c = false;
+            }
+        }
+
+        if (c){
+            break;
+        }
+        console.log("mix again");
+    }
+}
+
+function saveSeat(){
+    localStorage.clear();
+
+    let seat = new Array(0);
+    for (let i=0; i<div_seat.length; i++){
+        seat.push(div_seat[i].value);
     }
     console.log(seat);
-
-    let j = 0;
-    for (let i=0; i<33; i++){
-        if (fixedSeat[i] == false){
-            div_seat[i].value = seat[j];
-            j += 1;
-        }else {
-            div_seat[i].value = "";
-        }
-    }
+    localStorage.setItem("seats", JSON.stringify(seat));
 }
