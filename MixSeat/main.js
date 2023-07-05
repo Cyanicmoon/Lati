@@ -114,4 +114,25 @@ function saveSeat(){
     }
     console.log(seat);
     localStorage.setItem("seats", JSON.stringify(seat));
+    
+    const captureElement = document.getElementsByClassName("container")[0];
+
+    const temp = document.getElementsByClassName("save-seat")[0];
+    temp.classList.add("invisible");
+
+    domtoimage.toBlob(captureElement, {
+        filter: function(element) {
+            return element.tagName !== 'INPUT' || element.type !== 'checkbox';
+        }
+    })
+    .then(function(blob) {
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = '자리배치표.png';
+        link.click();
+        temp.classList.remove("invisible");
+    })
+    .catch(function(error) {
+        alert("오류가 발생했어요");
+    });
 }
