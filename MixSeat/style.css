@@ -163,3 +163,6 @@ input::-webkit-inner-spin-button {
 .save-seat:active{
     background-color: rgb(203, 203, 203);
 }
+.invisible{
+    display: none;
+}
