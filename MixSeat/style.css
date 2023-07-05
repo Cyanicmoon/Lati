@@ -124,12 +124,42 @@ input::-webkit-inner-spin-button {
     right: 20px;
     margin: auto;
     position: absolute;
-    border: 0;
+    border: 2px solid black;
     border-radius: 10px;
     cursor: pointer;
     font-size: 25px;
     background-color: white;
 }
 .mix:active{
+    background-color: rgb(203, 203, 203);
+}
+.mix-setting{
+    zoom: 2.0;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 10px;
+}
+.header-div{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    /* right: 200px; */
+}
+.header-div p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.save-seat{
+    width: 150px;
+    height: 50px;
+    margin-top: 13px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: white;
+}
+.save-seat:active{
     background-color: rgb(203, 203, 203);
 }
