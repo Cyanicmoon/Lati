@@ -10,6 +10,16 @@
     <header>
         <h1 class="title" style="cursor: default;">1-4 자리 배치</h1>
         <!-- <h2 class="maker">Made by Lati</h2> -->
+        <div style="position: absolute; top: 0; bottom: 0; margin: auto; right: 190px; display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+            <div class="header-div">
+                <input type="checkbox" class="mix-setting">
+                <p style="text-align: center;">고정 자리 비워두기</p>
+            </div>
+            <div class="header-div">
+                <input type="checkbox" class="mix-setting">
+                <p style="text-align: center;">이전 자리랑 다르게 배치</p>
+            </div>
+        </div>
         <button class="mix" onclick="mixSeats();">배치</button>
     </header>
     <!-- <div class="nav-bar">
@@ -156,6 +166,7 @@
             </div>
             <div class="t"></div>
             <div class="t"></div>
+            <button class="save-seat" onclick="saveSeat()">저장</button>
         </div>
     </div>
     <div class="container" style="margin-top: 50px; margin-bottom: 50px; display: block;">
@@ -165,5 +176,10 @@
         </div>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.0/html2canvas.min.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script> -->
+<!-- <script src="database.js"></script> -->
 <script src="main.js"></script>
+
 </html>
